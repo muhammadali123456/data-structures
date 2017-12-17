@@ -1,15 +1,23 @@
-function Set() {
+function Stack() {
 
-  this.storage = [];
-};
+  var storage = [];
 
-Set.prototype.addToSet 
-
-Set.prototype.removeFromSet 
-
-Set.prototype.contains 
+this.add = function (value) {
+	storage.push (value)
+}
 
 
-var mySet = new Set();
+this.remove = function (){
+
+	return storage.pop ()
+}
+
+this.size = function () {
+
+	return storage.length
+}
+}
 
 
+
+  
